@@ -1,0 +1,12 @@
+mixin modal-auth()
+	//block modal-auth
+	.modal.modal-auth
+		.modal-auth__title АВТОРИЗАЦИЯ
+		.modal-close
+		.modal-city__wrap
+			a(href="#").modal-city__el.modal-city__el--active Набережные челны
+			- var arr =['Елабуга','Нижнекамск','Алметьевск','Казань'];
+			- each val in arr 
+				a(href="#").modal-city__el #{val}
+				
+	//block modal-auth end

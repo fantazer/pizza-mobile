@@ -1,0 +1,62 @@
+//! block toolbar
+//.section-toolbar 
+//.filter 
+.filter__toggle
+	+below(1200px)
+		font-size 16px
+	up()
+	width 100%
+	background green 
+	font-size 24px
+	padding 10px
+	color white
+	margin-bottom 50px
+	padding-left 25px
+	position relative
+.filter__toggle-close
+	icon-x(12px, green, 1px)
+	round()
+	flex(mid)
+	border 1px solid green
+	size 20 20
+	position absolute!important
+	right 20px	
+	top 50%
+	margin-top -10px
+	
+.filter__toggle--open
+	background white
+	color green
+	border-bottom 4px solid green
+//.left-menu 
+.left-menu-el
+	+below(978px)
+		font-size 16px 
+	width 100%
+	font-size 24px
+	padding 10px
+	padding-left 25px
+	up()
+.left-menu-el--active
+	background dark
+	a
+		color white
+.filter-wrap
+	cp()
+	position relative
+.filter__sub
+	position absolute
+	top 100%
+	background white
+	display none
+	padding-top 30px	
+	padding-left 25px	
+.sytle-input-text
+	+below(978px)
+		font-size 16px
+	font-size 24px
+.filter__sub-group
+	margin-bottom 20px
+//.left-menu-el--active 
+//.section-content 
+//!block toolbar end

@@ -1,0 +1,12 @@
+mixin modal-city()
+	//block modal-city
+	.modal.modal-city
+		.modal-city__title Выберите город
+		.modal-close
+		.modal-city__wrap
+			a(href="#").modal-city__el.modal-city__el--active Набережные челны
+			- var arr =['Елабуга','Нижнекамск','Алметьевск','Казань'];
+			- each val in arr 
+				a(href="#").modal-city__el #{val}
+		
+	//block modal-city end

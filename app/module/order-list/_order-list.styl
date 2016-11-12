@@ -1,0 +1,130 @@
+//! block order-list
+.order-list__wraper
+	height 680px
+	overflow auto
+	
+.order-list--el
+	flex(between)
+	margin-bottom 20px
+	margin-left 30px
+.order-list--img
+	width 120px
+	margin-right 30px
+.order-list--info
+	width calc( 100% - 120px)
+	flex(mid)
+	border-bottom 1px solid red
+	padding-bottom 20px
+.order-list--descr
+	width 46%
+	flex(mid)
+	justify-content flex-start
+.order-list--title
+	font-size 24px
+	font-family Myriad  Pro
+	font-weight 400px
+	margin-bottom 10px
+.order-list--text
+	font-size 19px
+	line-height 28px 
+.order-list--numb
+	width 18%
+	flex(mid)
+.order-list__decr
+	flex(mid)
+	input
+		padding 4px
+		text-align center
+		margin 0 10px
+		border 1px solid red
+		border-radius 0px
+		font-family "Core Mellow Compressed"
+		font-size 24px
+	.minus, .plus
+		font-family "Core Mellow Compressed"
+		font-size 40px
+		line-height 0px
+		margin-top -5px
+		cp()
+		border 0px
+
+.order-list--cost
+	width 18%
+	font-family "Core Mellow Compressed"
+	font-size 24px
+	text-align center
+	.rub
+		font-size 16px
+.order-list-del
+	flex(mid)
+	width 18%
+.order-list-del__el
+	flex(mid)
+	round()
+	border 2px solid dark
+	size 25 25
+	cp()
+	span
+		icon-x(14px, dark, 2px)
+		margin-top -1px
+.mCSB_dragger
+	width 15px !important
+	height 15px !important
+	min-height 15px!important
+	background red 
+.mCSB_dragger_bar
+	background red!important
+
+.order-list
+	.mCSB_scrollTools
+		left 0
+	.mCSB_inside > .mCSB_container
+		margin-left 0
+		margin-right 0
+.order-list__tab
+	padding-left 180px
+	padding-bottom 20px
+	f() 
+.order-list__tab-name
+	font-size 24px
+	width 46%
+.order-list__tab-enc
+	font-size 24px
+	width 18%
+	text-align center
+.order-list__tab-cost
+	font-size 24px
+	width 18%
+	text-align center
+.section-info__order
+	+below(1200px)
+		fw()
+		.section-toolbar
+			width 100%
+			margin-right 0
+			margin-bottom 30px
+			.recomend
+				flex(mid)
+			.recomend__el
+				margin 10px
+		.section-content
+			width 100%
+.order-list__footer
+	margin-top 60px
+	margin-left 180px
+	display flex
+	align-items center
+	margin-bottom 100px
+.order-list__footer-get
+	@extend .btn--dark
+	font-family Myriad  Pro
+.order-list__footer-total
+	margin 0 40px
+	font-size 28px
+.order-list__footer-val
+	font-family Core Mellow Compressed
+	font-size 29px
+	.rub
+		font-size 16px
+	
+//!block order-list end

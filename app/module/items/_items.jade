@@ -1,0 +1,18 @@
+mixin items()
+	//block items
+	.items-wraper
+		.items-wraper__title Пиццы
+		- for (var i = 0; i < 24; i++)
+			.items-el
+				.items-new новинка
+				.items-img
+					img(src="img/pizza-item.png", alt="")
+				.items-info
+					.items-title Чизбургер пицца
+					.items-text Томатный соус, брынза, маслины, сладкий перец, томаты, шампиньоны, красный лук, моцарелла, базилик
+					.items-get
+						.items-cost 410 
+							span.rub c
+						.items-basket в корзину
+
+	//block items end_

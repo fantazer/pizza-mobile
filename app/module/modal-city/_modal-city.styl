@@ -1,0 +1,42 @@
+//! block modal-city
+//.modal 
+.modal-city 
+	padding 0
+	padding-bottom 50px
+	width 550px
+.modal-city__title
+	position absolute
+	left 0
+	top 10px
+	display inline-block
+	padding 10px 40px
+	padding-left 60px
+	font-size 22px
+	color white
+	background red
+	up()
+	line-height 18px
+	font-family "Myriad Pro"
+//.modal-close 
+.modal-city__wrap
+	margin-top 100px
+	flex(between)
+	fw()
+.modal-city__el
+	up()
+	width 46%
+	font-size 22px 
+	padding-left 60px
+	margin-bottom 10px
+	&:hover
+		border-bottom 2px solid red
+		color red
+		margin-bottom 8px
+	&:even
+		padding-left 0
+		padding-right 60px
+.modal-city__el--active
+	border-bottom 2px solid red
+	color red
+	margin-bottom 10px!important
+//!block modal-city end

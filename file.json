@@ -1,0 +1,22 @@
+{
+	"block":{
+		"header":"header",
+		"slider":"slider",
+		"toolbar":"toolbar",
+		"items":"items",
+		"footer":"footer",
+		"modal-item":"modal-item",
+		"modal-city":"modal-city",
+		"order-recom":"order-recom",
+		"order-list":"order-list",
+		"delivery":"delivery",
+		"m-header":"m-header",
+		"m-menu":"m-menu"
+	},
+	"page":{
+		"index":"index",
+		"order":"order",
+		"cabinet":"cabinet",
+		"status":"status"
+	}
+}

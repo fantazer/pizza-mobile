@@ -1,0 +1,14 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
++header()
+.section-wraper.section-wraper--page
+	.main-cont
+		+delivery()
++footer()
++modal-item()
++modal-city()
++modal-auth()
+	
+include block_html/widget.html
+include ./block_html/_script.jade

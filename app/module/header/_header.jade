@@ -1,0 +1,61 @@
+mixin header()
+	//block header
+	.header-wraper
+		.main-cont
+			.header
+				.header__logo
+					img(src="img/logo.png", alt="")
+				.header__slogan Доставка пиццы Набережные Челны 
+				.header__contact
+					.header__contact-text звонок бесплатный
+					.header__contact-numb 8 (800) 100-7-500
+				.social
+					a(href="#").social__el
+						i.icon.icon-youtube-alt
+					a(href="#").social__el
+						i.icon.icon-main
+					a(href="#").social__el
+						i.icon.icon-facebook
+					a(href="#").social__el
+						i.icon.icon-instagrem
+				.header__basket-wrap
+					.header__cost 1200
+						span.rub c
+					.header__basket Корзина
+					.basket-cond
+						.basket-cond__cont
+							.basket-cond__close
+							.basket-cond__title  У вас в корзине:
+							.basket-cond__wrap
+								- for (var i = 0; i < 20; i++)
+									.basket-cond__el
+										.basket-cond__img
+											img(src="img/pizza-small.png", alt="")
+										.basket-cond__info
+											.basket-cond__info-title Чизбургер пицца
+											.basket-cond__numb 1
+											.basket-cond__cost 410
+												span.rub c
+							.basket-cond__footer
+								.basket-cond__get Оформить заказ
+								.basket-cond__total 1230
+									span.rub c
+
+
+		.nav-wraper
+			.main-cont
+				.nav
+					.nav__town 
+						.nav__town-wrap
+							.nav__town-text Набережные Челны
+							.triangle-bottom
+					.nav__menu
+						//for active el add class .nav__menu-el--active 
+						- var arr =['О нас','Рестораны','Карьера','Наша культура','Обучение','Голос рнр'];
+						- each val in arr 
+							.nav__menu-el 
+								a(href="#") #{val}
+					.nav__menu-enter 
+						span Вход/Регистрация
+
+	//block header end1

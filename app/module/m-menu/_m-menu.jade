@@ -1,0 +1,33 @@
+mixin m-menu()
+	//block m-menu
+	.m-menu 
+		.m-menu__cont
+			.m-menu__close
+				.icon.icon-left-open-big
+			.m-menu__cont-scroll
+				a(href="#").m-menu__head-el 
+					.icon.icon-user
+					| Личный кабинет
+				a(href="#").m-menu__head-el 
+					.icon.icon-location
+					| Нижний новгород
+				.m-menu__wrap
+					- var arr =['Роллы','Комбо-наборы','Горячие блюда','Салаты','Супы','Сендвичи и шаверма','Десерты','Напитки'];
+					a(href="#").m-menu__el.m-menu__el--active пицца
+					- each val in arr 
+						a(href="#").m-menu__el #{val}
+				a(href="#").m-menu__footer-el  Условия доставки
+				a(href="#").m-menu__footer-el  Акции
+				.m-menu__call
+					.m-menu__call-title Звонок бесплатный
+					.m-menu__call-number 8 (800) 100-7-50
+				.social
+					a(href="#").social__el
+						i.icon.icon-youtube-alt
+					a(href="#").social__el
+						i.icon.icon-main
+					a(href="#").social__el
+						i.icon.icon-facebook
+					a(href="#").social__el
+						i.icon.icon-instagrem
+	//block m-menu end

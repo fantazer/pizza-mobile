@@ -1,0 +1,226 @@
+.all-page__el
+	width 32%
+	padding 5px	
+	bsh()
+	margin-bottom 30px	 
+.all-page
+	flex(between)
+	fw()
+.all-page__title
+	up()
+	font-weight 	700
+	text-align center	
+	padding 10px	
+	font-size 22px	 
+.old-browser
+	background grey
+	width 100%
+	height 100vh
+	padding-top 200px
+.old-browser-text 
+	text-align center
+	color white
+	font-size 20px
+
+.section
+	+below(768px)
+		padding 30px 0
+		.btn
+			width 100%
+			text-align center
+	padding 90px 0px
+
+.hidden
+	display none  !important
+	
+.clearfix 
+	zoom 1
+.clearfix:before,
+.clearfix:after 
+	content ""
+	display table
+.clearfix:after 
+	clear both
+
+@-webkit-keyframes slideInDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+		visibility: visible;
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes slideInDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+		visibility: visible;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.shrink
+	position fixed
+	top 0
+	left 0
+	background white
+	width 100%
+	margin 0
+	animation:  slideInDown  1s 1 ease-in-out
+		
+.icon
+	display inline-block
+	font  normal normal normal "main"
+	line-height: 70%;
+	display: inline-block;
+	position: relative;
+
+/*.section-wraper
+	padding-top 160px
+	min-width 800px*/
+.owl-next,.owl-prev
+	position absolute
+	bottom 10%
+	color white
+	font-size 40px
+.owl-carousel
+	position relative
+	.icon
+		font-size 64px
+.owl-prev
+	left 0px
+.owl-next
+	right 0px
+.owl-dots
+	width 100%
+	flex(mid)
+	margin-top -40px
+	position relative
+	z-index 2000
+.owl-dot
+	round()
+	margin 5px
+	width 10px
+	height 10px
+	background white
+.owl-dot.active
+	background #322f40
+
+.section-info
+	flex(between)
+	align-items flex-start
+	min-height 550px
+.section-toolbar
+	width 20%
+	margin-right 5%
+.section-content
+	width 75%
+
+.style-label
+	display flex
+	position relative
+	align-items center
+.style-label--checkbox
+	input
+		position absolute
+		top 0
+		left -9999px
+	.sytle-input-element
+		size 17 16
+		position relative
+		display inline-block
+		background-size cover
+		margin-right 10px
+		background-image url('../img/check-empty.png')
+		cp()
+	.sytle-input
+		&:checked + .sytle-input-element
+			background-image url('../img/check.png')
+			flex(mid)
+			color white
+
+.style-label--radio
+	input
+		position absolute
+		top 0
+		left -9999px
+	.sytle-input-element
+		size 17 16
+		position relative
+		display inline-block
+		background-image url('../img/check-empty.png')
+		margin-right 10px
+		cp()
+	.sytle-input
+		&:checked + .sytle-input-element
+			background-image url('../img/check.png')
+			flex(mid)
+			color white
+
+#mCSB_1_dragger_vertical
+	width 15px !important
+	height 15px !important
+	min-height 15px!important
+	background red 
+.mCSB_dragger_bar
+	background red!important
+
+.basket-cond__wrap
+	.mCSB_scrollTools
+		left 0
+	.mCSB_inside > .mCSB_container
+		margin-left 0
+		margin-right 0
+
+.modal
+	display none
+	background white
+	padding 30px 20px
+	br(4px) 
+	position relative
+
+.section-wraper--page
+	padding-top 260px
+
+.minus,
+.plus
+	flex(mid)
+	width 30px
+	height 30px
+	border 1px solid #eee
+	&:hover
+		cursor pointer
+
+.minus
+	border-radius 5px 0px 0px 5px
+	border-right 0px
+
+.plus
+	border-radius 0px 5px 5px 0px
+	border-left 0px
+	
+
+//widgetStyle
+
+.jstore-tag h1
+	display none
+
+.jstore-tag.lsp-block-tags-filter
+	display none
+
+.jstore-tag.lsp-block-items.lsp-js-block-items
+	flex(between)
+	fw()
+.items-img
+	min-height 190px
+	flex(mid)
+	
+.body-fix
+	position fixed
+	width 100%
+.m-section-content
+	width 100%

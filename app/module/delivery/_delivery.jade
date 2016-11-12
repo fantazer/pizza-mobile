@@ -1,0 +1,179 @@
+mixin delivery()
+	//block delivery
+	.coner-title Условия доставки
+	.del-condition
+		- each item in condition
+			.del-condition__el
+				.del-condition__icon
+					div(class=" #{item.icon}")
+				.del-condition__info
+					.del-condition__title #{item.title}
+					.del-condition__text #{item.text}
+	
+	.coner-title Минимальная сумма заказа
+	.del-cost
+		.del-cost__wraper
+			.del-info
+				.del-info__el
+					.del-info__el-info
+						.del-info__el-numb 500 
+						.del-info__el-text в зоне доставки	
+						.del-info__el-art.art--green A 
+					.del-info__el-footer
+						span.icon-clock
+						.del-info__el-sub С 06:00 - 00:00 <br> В пределах зоны доставки
+
+				.del-info__el
+					.del-info__el-info
+						.del-info__el-numb 2000  
+						.del-info__el-text в зоне доставки	
+						.del-info__el-art.art--yellow E
+					.del-info__el-footer
+						span.icon-clock
+						.del-info__el-sub С 06:00 - 00:00 <br> В пределах зоны доставки
+
+			.del-attantion
+				.del-attantion__title 
+					span.icon-attantion
+					span  Внимание:
+				.del-attantion__text  Доставка осуществляется в городах: Набережные Челны, Елабуга, Нижнекамск, Алметьевск, Казань Стоимость доставки корректируется, согласно сумме заказа и зонам доставки. Указано на карте ниже. 
+	
+	.coner-title Зоны доставки
+	.delivery-map
+
+	.delivery-zone
+		.delivery-zone__el
+			.delivery-zone__wrap
+				.delivery-zone__title
+					.delivery-zone__art.art--green A 
+					.delivery-zone__title-text Зона доставки
+				.delivery-zone__info
+					.delivery-zone__info-el
+							.icon-clock
+							.delivery-zone__info-text Заказ до 499 руб. -90 руб. <br> В пределах зоны доставки
+					.delivery-zone__info-el
+							.icon-clock
+							.delivery-zone__info-text Заказ от 500 руб - бесплатно <br> В пределах зоны доставки
+					.delivery-zone__info-el
+							.icon-clock
+							.delivery-zone__info-text Время доставки: в течение 60 минут
+
+
+		.delivery-zone__el
+			.delivery-zone__wrap
+				.delivery-zone__title
+					.delivery-zone__art.art--red B 
+					.delivery-zone__title-text Зона доставки
+				.delivery-zone__info
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ до 499 руб. - 120 руб. <br> В пределах зоны доставки
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ от 500-599 руб. - 30 руб. <br> В пределах зоны доставки
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ от 600 руб. - бесплатно <br> В пределах зоны доставки
+
+		.delivery-zone__el
+			.delivery-zone__wrap
+				.delivery-zone__title
+					.delivery-zone__art.art--blue С 
+					.delivery-zone__title-text Зона доставки
+				.delivery-zone__info
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ до 499 руб. - 150 руб. <br> В пределах зоны доставки
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ от 500-799 руб. - 60 руб. <br> В пределах зоны доставки
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ от 800 руб. - бесплатно <br> В пределах зоны доставки
+
+		.delivery-zone__el
+			.delivery-zone__wrap
+				.delivery-zone__title
+					.delivery-zone__art.art--sky D 
+					.delivery-zone__title-text Зона доставки
+				.delivery-zone__info
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ до 499 руб. - 180 руб. <br> В пределах зоны доставки
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ от 500-1499 руб. - 90 руб. <br> В пределах зоны доставки
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ от 1500 руб. - бесплатно <br> В пределах зоны доставки
+
+		.delivery-zone__el
+			.delivery-zone__wrap
+				.delivery-zone__title
+					.delivery-zone__art.art--yellow E
+					.delivery-zone__title-text Зона доставки
+				.delivery-zone__info
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ до 499 руб. - 250 руб. <br> В пределах зоны доставки
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ от 500-1999 руб. - 160 руб. <br> В пределах зоны доставки
+					.delivery-zone__info-el
+						.icon-clock
+						.delivery-zone__info-text Заказ от 2000 руб. - бесплатно <br> В пределах зоны доставкивки
+
+	.coner-title Типы заказов
+
+	.del-section
+		.del-section__wraper
+			- each item in order
+				.del-section__el
+					.del-section__img
+						.del-section__icon
+							div(class="icon #{item.icon}")
+					.del-section__info
+						.del-section__title #{item.title}
+						.del-section__text #{item.text}
+	
+	.coner-title 	Информация
+	
+	.del-section
+		.del-section__wraper.del-section__wraper-thrd
+			- each item in info
+				.del-section__el
+					.del-section__img
+						.del-section__icon
+							div(class="icon #{item.icon}")
+					.del-section__info
+						.del-section__title #{item.title}
+						.del-section__text #{item.text}
+	
+	.coner-title Способы оплаты товара
+	
+	.del-section
+		.del-section__wraper.del-section__wraper-thrd
+			- each item in pay
+				.del-section__el
+					.del-section__img
+						.del-section__icon
+							div(class="icon #{item.icon}")
+					.del-section__info
+						.del-section__title #{item.title}
+						.del-section__text #{item.text}
+
+	.coner-title  Почему наши рестораны?
+	
+	.del-section
+		.del-section__wraper
+			- each item in why
+				.del-section__el
+					.del-section__img
+						.del-section__icon
+							div(class="icon #{item.icon}")
+					.del-section__info
+						.del-section__title #{item.title}
+						.del-section__text #{item.text}
+
+
+	//block delivery end

@@ -1,0 +1,42 @@
+html 
+	box-sizing border-box
+*,
+*:before,
+*:after 
+	box-sizing: inherit
+img,
+video,
+iframe 
+	max-width 100%
+	height auto
+	border 0
+	-ms-interpolation-mode bicubic
+	display block
+
+table
+	table(true,true)
+
+//responsive table	
+.small-only
+	+below(768px)
+		display table
+	display none
+	
+.large-only
+	+below(768px)
+		display none
+
+.bold
+	font-weight $weigh-bold
+
+//Kss edit
+.kss-section
+	max-width 100%!important
+.linenums
+	padding 20px 40px!important
+.kss-title
+	margin-bottom 40px!important
+.kss-modifier__example
+	padding 10px!important
+	box-shadow 1px 1px 10px #d8d8d8
+	

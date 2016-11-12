@@ -1,0 +1,38 @@
+mixin toolbar()
+	//block toolbar
+	.filter
+		.filter-wrap
+			.filter__toggle Фильтр пицц
+				span.filter__toggle-close
+			.filter__sub
+				.filter__sub-group
+					- var arr =['Вегетарианская','Мясная','Морепродукты'];
+					- each val in arr 
+						label.style-label.style-label--radio
+							input(type="radio" name="group-1").sytle-input
+							.sytle-input-element
+							.sytle-input-text #{val}
+				.filter__sub-group
+					- var arr =['Обычная','Средней остроты','Острая'];
+					- each val in arr 
+						label.style-label.style-label--radio
+							input(type="radio" name="group-2").sytle-input
+							.sytle-input-element
+							.sytle-input-text #{val}
+				.filter__sub-group
+					- var arr =['Акция','Новинка','Бесплатно'];
+					- each val in arr 
+						label.style-label.style-label--radio
+							input(type="radio" name="group-3").sytle-input
+							.sytle-input-element
+							.sytle-input-text #{val}
+
+	.left-menu
+		.left-menu-el.left-menu-el--active 
+			a(href="#") Пицца
+		- var arr =['Роллы','Комбо-наборы','Горячие блюда','Салаты','Супы','Сендвичи и шаверма','Десерты','Напитки'];
+		- each val in arr 
+			.left-menu-el
+				a(href="#") #{val}
+
+	//block toolbar end

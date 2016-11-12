@@ -1,0 +1,99 @@
+//! block m-menu
+.m-menu 
+	position absolute
+	top 0
+	left 0
+	width 80%
+	height 100vh
+	background dark
+	color white
+	z-index 30000
+	padding-bottom 20px
+	transform: translateX(-130%)
+	a
+		color white
+	.mCSB_inside > .mCSB_container
+		margin-right 0
+	.social
+		display block
+		flex(mid)
+		margin-bottom 30px
+	.social__el
+		border-color white
+.m-menu__cont
+	position relative
+.m-menu__cont-scroll
+	overflow auto
+	height 100vh
+.m-menu__close
+	flex(mid)
+	round()
+	position absolute
+	top 50%
+	right -25px
+	background red
+	color white 
+	size 50 50
+	font-size 32px
+	z-index 300
+	margin-top -25px
+	.icon
+		margin-left -10px
+.filter-bg 
+	width 100%
+	height 100%
+	background rgba(242, 242, 242, 0.88);
+	position absolute
+	top 0px
+	left 0px
+	z-index 100
+.slide-menu--show
+	tr(all)
+	transform: translateX(0) !important;
+	z-index: 2000;
+.m-menu__head-el 
+	font-size 21px
+	font-weight 300
+	display block
+	padding 10px 0 10px 20px
+	border-bottom 2px solid darken(dark,20)
+	flex(mid)
+	justify-content flex-start
+	.icon
+		margin-right 10px
+		font-size 24px
+.m-menu__el
+	width 100%
+	display block
+	padding 10px 10px 10px 20px
+	font-size 18px
+	font-weight 700
+	up() 
+.m-menu__wrap
+	margin 20px 0
+.m-menu__el--active
+	background red
+	color white 
+.m-menu__footer-el
+	font-size 21px
+	font-weight 300
+	display block
+	padding 10px 0 10px 20px
+	border-bottom 2px solid darken(dark,20)
+	&:nth-child(4)
+		border-top 2px solid darken(dark,20)
+.m-menu__call
+	margin-bottom 30px
+	margin-top 20px
+.m-menu__call-title 
+	text-align center
+	font-size 25px
+	font-weight 300 
+	margin-bottom 10px
+.m-menu__call-number
+	text-align center 
+	font-size 32px
+	font-weight 700
+	background red
+	padding 5px 0 
+//!block m-menu end

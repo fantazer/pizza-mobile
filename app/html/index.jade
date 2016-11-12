@@ -1,0 +1,19 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+
++m-header()
++m-menu()
+.section-wraper
+	.main-cont
+		.section-info
+			.m-section-content
+				+items()
++footer()
++modal-item()
++modal-city()
++modal-auth()
+	
+
+include block_html/widget.html
+include ./block_html/_script.jade

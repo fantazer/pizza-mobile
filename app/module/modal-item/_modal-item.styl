@@ -1,0 +1,61 @@
+//! block modal-item
+.modal
+	bsh()
+	position relative
+.modal-item
+	width 550px!important
+	padding 40px
+.modal-item__title
+	position absolute
+	left 0
+	top 10px
+	display inline-block
+	padding 10px 40px
+	font-size 22px
+	color white
+	background green
+	line-height 18px
+.modal-close
+	icon-x(21px, dark, 2px)
+	round()
+	flex(mid)
+	border 2px solid dark
+	size 35 35
+	position absolute!important
+	right 20px	
+	top 22px
+	margin-top -10px
+	cp()
+.modal-item__img
+	img
+		display block
+		margin 20px auto
+		margin-top 30px
+.modal-item__info
+	flex(between)
+	align-items flex-start
+.modal-item__desc
+	width 55%
+	margin-right 5%
+.modal-item__text
+	margin-bottom 10px
+.modal-item__get
+	flex(around)
+.modal-item__price
+	margin-left 40px
+	font-family "Core Mellow Compressed"
+	font-size 25px
+	font-weight 400
+	.rub
+		font-size 14px
+.modal-item__link
+	@extend .btn--dark
+	font-size 24px
+	text-transform initial
+	font-weight 300
+//.modal-item__condition
+.modal-item__condition-el
+	up()
+	&:nth-child(1)
+		margin-bottom 10px
+//!block modal-item end

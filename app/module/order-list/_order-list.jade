@@ -1,0 +1,32 @@
+mixin order-list()
+	//block order-list
+	.order-list
+		.order-list__tab
+			.order-list__tab-name Название/состав:
+			.order-list__tab-enc Количество:
+			.order-list__tab-cost Стоимость:
+		.order-list__wraper
+			- for (var i = 0; i < 8; i++)
+				.order-list--el
+					.order-list--img
+						img(src="img/pizza-small.png", alt="")
+					.order-list--info
+						.order-list--descr
+							.order-list--title Чизбургер пицца
+						.order-list--numb
+							.order-list__decr
+								span.minus -
+								input(type='text', value='0', size='1' readonly)
+								span.plus +
+						.order-list--cost 410
+							span.rub c
+						.order-list-del
+							.order-list-del__el
+								span
+	.order-list__footer
+		.order-list__footer-get Оформить заказ
+		.order-list__footer-total Общая стоимость:
+		.order-list__footer-val 1230
+			span.rub c
+
+	//block order-list end

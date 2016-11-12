@@ -1,0 +1,201 @@
+//! block header
+.header 
+	padding 20px
+	flex(between)
+	position relative
+//.header__logo
+.header-wraper
+	z-index 2000
+	background white 
+.nav-wraper
+	background red 
+.header__slogan
+	+below(1200px)
+		display none
+	width 200px
+	color #192a3b
+	font-size 24px
+//.header__contact 
+.header__contact-text
+	text-align right
+	font-size 24px
+	color red
+	margin-bottom -10px
+	font-weight 400
+.header-wraper
+	height 155px
+	position fixed
+	width 100%
+.header__contact-numb
+	color black
+	font-family  'Core Mellow Compressed';
+	font-size 32px
+	font-weight 400
+.social
+	+below(978px)
+		display none
+	f()
+.social__el
+	size 25 25
+	round()
+	border 1px solid black
+	flex(mid)
+	font-size 14px
+	text-align center
+	margin-right 2px
+.header__basket-wrap
+	flex(between)
+.header__cost
+	font-family 'Core Mellow Compressed'
+	color black
+	font-size 32px
+	font-weight 400
+	.rub
+		font-size 18px
+		margin-left -7px
+.header__basket
+	@extend .btn--dark
+	margin-left 15px
+	padding 10px 30px
+.nav 
+	f()
+	height 55px
+.nav__town-wrap
+	flex(mid)
+.nav__town
+	+below(1200px)
+		width 20%
+	width 15%
+	text-align center
+	background red
+	color white
+	flex(mid)
+	cp()
+.nav__town-text
+	+below(1200px)
+		font-size 18px
+	margin-right 15px
+	font-size 24px
+	font-weight 300
+.triangle-bottom
+	triangle: 'down' 7px white
+.nav__menu 
+	flex(between)
+	width 70%
+	background dark 
+.nav__menu-el
+	text-align center
+	padding 15px 0
+	flex-grow 1
+	a
+		+below(1200px)
+			font-size 18px
+		up()
+		font-size 24px
+		color white
+		font-weight 300
+		padding 3px 5px
+		tr(all)
+		&:hover
+			color darken(white,60)
+.nav__menu-el--active
+	a
+		border 1px solid white
+		margin-right 2px
+		
+.nav__menu-enter 
+	+below(1200px)
+		font-size 18px
+		width 20%
+	width 15%
+	text-align center
+	background red
+	color white
+	font-size 24px
+	font-weight 300
+	flex(mid)
+	cp()
+
+.basket-cond__close
+	icon-x(12px, dark, 1px)
+	round()
+	flex(mid)
+	border 1px solid dark
+	size 20 20
+	position absolute!important
+	right 20px	
+	top 25px
+	margin-top -10px
+	cp()
+.basket-cond
+	position absolute
+	top 85px
+	width 350px
+	background white 
+	z-index 2100
+	right 30px
+	br(5px)
+	bsh()
+	display none
+.basket-cond__cont
+	position relative
+.basket-cond__title
+	color white
+	background red
+	display inline-block 
+	padding 5px 20px
+	width 240px
+	margin-top 10px
+	up()
+	font-family Myriad  Pro
+.basket-cond__wrap
+	margin-left 20px
+	margin-top 20px
+	height calc(100vh - 240px)
+	overflow overlay
+.basket-cond__el
+	flex(between)
+	padding 3px 0
+	
+.basket-cond__img
+	width 60px
+	margin-right 15px
+	margin-left 30px
+.basket-cond__info
+	flex(between)
+	color black
+	width 230px
+	border-bottom 2px solid red
+	padding-bottom 5px
+.basket-cond__info-title
+	text-transform initial
+	font-size 18px
+	font-weight 700 
+.basket-cond__numb
+	text-transform initial
+	font-size 18px
+	font-weight 700 
+	padding 3px 8px
+	border 1px solid red
+.basket-cond__cost
+	font-weight 700
+	font-size 20px
+	font-family Core Mellow Compressed
+	padding-right 10px
+	.rub
+		font-size 12px
+.basket-cond__footer
+	flex(around)
+	margin 20px 0
+.basket-cond__get
+	@extend .btn--dark
+	margin-left 90px
+	font-size 18px
+.basket-cond__total 
+	font-family Core Mellow Compressed
+	font-size 24px
+	.rub
+		font-family 'RUB'!important
+		font-size 14px
+//.rub
+//!block header end
