@@ -130,8 +130,8 @@ $(document).ready(function(){
 	});
 
 	//delete el in basket
-	$('.order-list-del__el').click(function(){
-		$(this).closest(".order-list--el").remove();
+	$('.m-order-list__del').click(function(){
+		$(this).closest(".m-order-list__el").remove();
 	})
 
 

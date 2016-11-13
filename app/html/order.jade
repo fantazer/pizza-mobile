@@ -1,14 +1,15 @@
 include block_html/_style.jade
 include ../module/**/*.jade
 
-+header()
++m-header()
++m-menu()
 .section-wraper.section-wraper--page
 	.main-cont
 		.section-info.section-info__order
 			.section-toolbar
 				+order-recom()
 			.section-content
-				+order-list()
+				+m-order-list()
 +footer()
 +modal-item()
 +modal-city()

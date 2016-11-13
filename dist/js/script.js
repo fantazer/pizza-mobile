@@ -55,6 +55,12 @@ $(document).ready(function(){
 		autoDraggerLength: false
 	});
 
+	$(".m-menu__cont-scroll").mCustomScrollbar({
+		setLeft: 0,
+		autoDraggerLength: false,
+		 scrollAmount:200
+	});
+
 
 
 
@@ -73,6 +79,7 @@ $(document).ready(function(){
 		}
 
 	hideToggleBasket('.header__basket','.basket-cond');
+	hideToggleBasket('.m-header__basket','.basket-cond');
 
 	$('.basket-cond__close').click(function(){
 			$('.basket-cond').hide();
@@ -123,8 +130,34 @@ $(document).ready(function(){
 	});
 
 	//delete el in basket
-	$('.order-list-del__el').click(function(){
-		$(this).closest(".order-list--el").remove();
+	$('.m-order-list__del').click(function(){
+		$(this).closest(".m-order-list__el").remove();
+	})
+
+
+	//Slide left menu
+	var slideToggleLeftMenu = function(targetClick,toggleEl) {
+		$(targetClick).click(function(event){
+				event.stopPropagation();
+				$(toggleEl).toggleClass("slide-menu--show");
+				$('body').prepend("<div class='filter-bg'></div>");
+				$('body').addClass("filter-body body-fix");
+		});
+		$(toggleEl).on("click", function (event) {
+			event.stopPropagation();
+		});
+		$(document).on("click", function () {
+				$(toggleEl).removeClass("slide-menu--show");
+				$('body').removeClass("filter-body body-fix");
+				$('.filter-bg').remove();
+		});
+	}
+		
+	slideToggleLeftMenu('.m-header__toggle','.m-menu '); 
+	$('.m-menu__close').click(function(){
+		$('.filter-bg').remove();
+		$('.m-menu').removeClass("slide-menu--show");
+		$('body').removeClass("filter-body body-fix");
 	})
 	/* ###### init RangeSLider  ######*/
 	/* ###### bower i --save-dev nouislider  ######*/

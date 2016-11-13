@@ -1,0 +1,25 @@
+mixin m-order-list()
+	//block m-order-list
+	.m-order-list
+		- for (var i = 0; i < 8; i++)
+			.m-order-list__el
+				.m-order-list__title Чизбургер пицца
+				.m-order-list__math 
+					span.math-cost 213
+					span.rub a
+					span.math-up x
+					span.math-numb 1
+					|  шт = 
+					span.math-total 345
+					span.rub a
+				.m-order-list__info
+					.m-order-list__img
+						img(src="img/pizza-small.png", alt="")
+					.m-order-list__val
+						.m-order-list__del
+							.icon.icon-delete-garbage-streamline
+						.order-list__decr
+							span.minus -
+							input(type='text', value='0', size='1' readonly)
+							span.plus +
+	//block m-order-list end
